@@ -30,6 +30,7 @@ public class User {
             .mobile(getMobile())
             .createTime(getCreateTime())
             .updateTime(getUpdateTime())
+            .isDeleted(getIsDeleted())
             .build();
         return userDto;
     }
@@ -41,6 +42,7 @@ public class User {
             .mobile(dto.getMobile())
             .createTime(dto.getCreateTime())
             .updateTime(dto.getUpdateTime())
+            .isDeleted(dto.getIsDeleted())
             .build();
         return user;
     }
